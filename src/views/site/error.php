@@ -5,6 +5,7 @@
 /* @var $exception Exception */
 use yii\helpers\Html;
 $this->title = $name;
+$this->subTitle = get_class($exception);
 
 ?>
 
