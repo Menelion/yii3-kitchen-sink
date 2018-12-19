@@ -1,0 +1,15 @@
+{
+  "name": "yii3-packages",
+  "version": "1.0.0",
+  "description": "Yii 3 kitchen sink",
+  "main": "index.js",
+  "dependencies": {
+    "purecss": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

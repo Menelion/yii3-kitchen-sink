@@ -31,4 +31,4 @@ phpunit.phar
 
 # Assets
 /public/assets
-
+/node_modules
