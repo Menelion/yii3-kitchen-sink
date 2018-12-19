@@ -64,7 +64,9 @@
         "yiisoft/log": "^3.0@dev",
         "yiisoft/yii-console": "^3.0@dev",
         "yiisoft/view": "^3.0@dev",
-        "yiisoft/yii-web": "^3.0@dev"
+        "yiisoft/yii-web": "^3.0@dev",
+        "symfony/var-dumper": "^4.3@dev",
+        "vlucas/phpdotenv": "^2.5@dev"
     },
     "require-dev": {
         "hiqdev/composer-config-plugin": "^1.0@dev"
@@ -76,7 +78,8 @@
         "config-plugin": {
             "common": "config/common.php",
             "params": "config/params.php",
-            "web": "config/web.php"
+            "web": "config/web.php",
+            "dotenv": ".env"
         }
     },
     "autoload": {

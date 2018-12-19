@@ -1329,9 +1329,6 @@ striping:
 .pure-table-horizontal tbody > tr:last-child > td {
   border-bottom-width: 0;
 }
-body {
-  color: #777;
-}
 .pure-img-responsive {
   max-width: 100%;
   height: auto;
@@ -1552,6 +1549,290 @@ Hides the menu at `48em`, but modify this based on your app's needs.
     position: relative;
     left: 150px;
   }
+}
+/* Component Needs */
+.pc-tab > input,
+.pc-tab section > div {
+  display: none;
+}
+/* Visual Styles */
+.pc-tab {
+  width: 100%;
+  margin: 0 auto;
+}
+.pc-tab ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.pc-tab ul li label {
+  float: left;
+  padding: 5px 8px;
+  border: 1px solid #ddd;
+  border-bottom: 0;
+  background: #eeeeee;
+  color: #444;
+  font-size: 11px;
+}
+.pc-tab ul li label:hover {
+  background: #dddddd;
+}
+.pc-tab ul li label:active {
+  background: #ffffff;
+}
+.pc-tab ul li:not(:last-child) label {
+  border-right-width: 0;
+}
+.pc-tab section {
+  clear: both;
+}
+.pc-tab section div {
+  padding: 20px;
+  width: 100%;
+  border: 1px solid #ddd;
+  background: #fff;
+  line-height: 1.5em;
+  letter-spacing: 0.3px;
+  color: #444;
+}
+.pc-tab section div h4 {
+  margin: 0;
+  letter-spacing: 1px;
+  color: #34495e;
+}
+#tab10:checked ~ nav .tab10 label {
+  background: white;
+  color: #111;
+  position: relative;
+}
+#tab10:checked ~ nav .tab10 label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: #ffffff;
+  left: 0;
+  bottom: -1px;
+}
+#tab10:checked ~ section .tab10 {
+  display: block;
+}
+#tab10:checked ~ nav .tab10 {
+  color: red;
+}
+#tab9:checked ~ nav .tab9 label {
+  background: white;
+  color: #111;
+  position: relative;
+}
+#tab9:checked ~ nav .tab9 label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: #ffffff;
+  left: 0;
+  bottom: -1px;
+}
+#tab9:checked ~ section .tab9 {
+  display: block;
+}
+#tab9:checked ~ nav .tab9 {
+  color: red;
+}
+#tab8:checked ~ nav .tab8 label {
+  background: white;
+  color: #111;
+  position: relative;
+}
+#tab8:checked ~ nav .tab8 label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: #ffffff;
+  left: 0;
+  bottom: -1px;
+}
+#tab8:checked ~ section .tab8 {
+  display: block;
+}
+#tab8:checked ~ nav .tab8 {
+  color: red;
+}
+#tab7:checked ~ nav .tab7 label {
+  background: white;
+  color: #111;
+  position: relative;
+}
+#tab7:checked ~ nav .tab7 label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: #ffffff;
+  left: 0;
+  bottom: -1px;
+}
+#tab7:checked ~ section .tab7 {
+  display: block;
+}
+#tab7:checked ~ nav .tab7 {
+  color: red;
+}
+#tab6:checked ~ nav .tab6 label {
+  background: white;
+  color: #111;
+  position: relative;
+}
+#tab6:checked ~ nav .tab6 label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: #ffffff;
+  left: 0;
+  bottom: -1px;
+}
+#tab6:checked ~ section .tab6 {
+  display: block;
+}
+#tab6:checked ~ nav .tab6 {
+  color: red;
+}
+#tab5:checked ~ nav .tab5 label {
+  background: white;
+  color: #111;
+  position: relative;
+}
+#tab5:checked ~ nav .tab5 label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: #ffffff;
+  left: 0;
+  bottom: -1px;
+}
+#tab5:checked ~ section .tab5 {
+  display: block;
+}
+#tab5:checked ~ nav .tab5 {
+  color: red;
+}
+#tab4:checked ~ nav .tab4 label {
+  background: white;
+  color: #111;
+  position: relative;
+}
+#tab4:checked ~ nav .tab4 label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: #ffffff;
+  left: 0;
+  bottom: -1px;
+}
+#tab4:checked ~ section .tab4 {
+  display: block;
+}
+#tab4:checked ~ nav .tab4 {
+  color: red;
+}
+#tab3:checked ~ nav .tab3 label {
+  background: white;
+  color: #111;
+  position: relative;
+}
+#tab3:checked ~ nav .tab3 label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: #ffffff;
+  left: 0;
+  bottom: -1px;
+}
+#tab3:checked ~ section .tab3 {
+  display: block;
+}
+#tab3:checked ~ nav .tab3 {
+  color: red;
+}
+#tab2:checked ~ nav .tab2 label {
+  background: white;
+  color: #111;
+  position: relative;
+}
+#tab2:checked ~ nav .tab2 label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: #ffffff;
+  left: 0;
+  bottom: -1px;
+}
+#tab2:checked ~ section .tab2 {
+  display: block;
+}
+#tab2:checked ~ nav .tab2 {
+  color: red;
+}
+#tab1:checked ~ nav .tab1 label {
+  background: white;
+  color: #111;
+  position: relative;
+}
+#tab1:checked ~ nav .tab1 label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: #ffffff;
+  left: 0;
+  bottom: -1px;
+}
+#tab1:checked ~ section .tab1 {
+  display: block;
+}
+#tab1:checked ~ nav .tab1 {
+  color: red;
+}
+#tab0:checked ~ nav .tab0 label {
+  background: white;
+  color: #111;
+  position: relative;
+}
+#tab0:checked ~ nav .tab0 label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: #ffffff;
+  left: 0;
+  bottom: -1px;
+}
+#tab0:checked ~ section .tab0 {
+  display: block;
+}
+#tab0:checked ~ nav .tab0 {
+  color: red;
+}
+body {
+  color: #777;
 }
 /* Errors */
 .exception {
