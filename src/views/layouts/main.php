@@ -27,16 +27,21 @@ $this
 
     <div id="menu">
         <div class="pure-menu">
-            <a class="pure-menu-heading" href="#">Company</a>
-
-            <ul class="pure-menu-list">
-                <li class="pure-menu-item"><a href="#" class="pure-menu-link">Home</a></li>
-                <li class="pure-menu-item"><a href="#" class="pure-menu-link">About</a></li>
-                <li class="pure-menu-item menu-item-divided pure-menu-selected">
-                    <a href="#" class="pure-menu-link">Services</a>
-                </li>
-                <li class="pure-menu-item"><a href="#" class="pure-menu-link">Contact</a></li>
-            </ul>
+            <a class="pure-menu-heading" href="#">IDK</a>
+            <?= yii\widgets\Menu::widget([
+                'options' => [
+                    'class' => 'pure-menu-list'
+                ],
+                'activeCssClass' => 'pure-menu-selected',
+                'linkTemplate' => '<a href="{url}" class="pure-menu-link">{label}</a>',
+                'itemOptions' => [
+                    'class' => 'pure-menu-item',
+                ],
+                'items' => [
+                    ['label' => 'Home', 'url' => ['site/index']],
+                    ['label' => 'Configuration', 'url' => ['site/config']],
+                ],
+            ]); ?>
         </div>
     </div>
 
