@@ -43,7 +43,7 @@ $this
     <div id="main">
         <div class="header">
             <h1><?= $this->title ?: 'Yii 3 Kitchen Sink' ?></h1>
-            <h2>My Subtitle</h2>
+            <h2><?= $this->subTitle ?></h2>
         </div>
 
         <div class="content">

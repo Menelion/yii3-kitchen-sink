@@ -17,7 +17,6 @@ class SiteController extends Controller
     
     public function actionIndex()
     {
-        echo $a;
         return $this->render('index', [
             'foo' => 'bar',
         ]);

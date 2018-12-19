@@ -10,4 +10,7 @@ return [
     'assetManager' => [
         'appendTimestamp' => true,
     ],
+    'view' => [
+        '__class' => idk\app\components\View::class,
+    ]
 ];
