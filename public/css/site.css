@@ -1417,7 +1417,11 @@ appears on the left side of the page.
 #menu a {
   color: #999;
   border: none;
-  padding: 0.6em 0 0.6em 0.6em;
+  padding: 0.6em;
+  text-align: center;
+}
+#menu a img {
+  width: 50%;
 }
 /*
     Remove all background/borders, since we are applying them to #menu.
@@ -1444,8 +1448,7 @@ appears on the left side of the page.
 /*
     This styles the selected menu item `<li>`.
     */
-#menu .pure-menu-selected,
-#menu .pure-menu-heading {
+#menu .pure-menu-selected {
   background: #1f8dd6;
 }
 /*

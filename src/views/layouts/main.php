@@ -1,6 +1,8 @@
 <?php
 
 use idk\app\assets\AppAsset;
+use yii\helpers\Url;
+
 /* @var $this \yii\web\View */
 /* @var $content string */
 
@@ -27,7 +29,7 @@ $this
 
     <div id="menu">
         <div class="pure-menu">
-            <a class="pure-menu-heading" href="#">IDK</a>
+            <a class="pure-menu-heading" href="<?= Url::to(['site/index']) ?>"><img src="/img/yii.png" width="100%"/></a>
             <?= yii\widgets\Menu::widget([
                 'options' => [
                     'class' => 'pure-menu-list'

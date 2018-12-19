@@ -13,4 +13,8 @@ class AppAsset extends AssetBundle
     public $css = [
         'css/site.less'
     ];
+
+    public $js = [
+        'js/ui.js',
+    ];
 }
