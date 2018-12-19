@@ -63,7 +63,8 @@
         "yiisoft/di": "^3.0@dev",
         "yiisoft/log": "^3.0@dev",
         "yiisoft/yii-console": "^3.0@dev",
-        "yiisoft/view": "^3.0@dev"
+        "yiisoft/view": "^3.0@dev",
+        "yiisoft/yii-web": "^3.0@dev"
     },
     "require-dev": {
         "hiqdev/composer-config-plugin": "^1.0@dev"
@@ -74,8 +75,12 @@
         },
         "config-plugin": {
             "common": "config/common.php",
-            "params": "config/params.php"
+            "params": "config/params.php",
+            "web": "config/web.php"
         }
+    },
+    "autoload": {
+        "psr-4": {"idk\\app\\": "src"}
     },
     "config": {
         "foxy": {

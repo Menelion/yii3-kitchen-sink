@@ -1,3 +1,7 @@
 <?php
 
-return [];
+return [
+    'app' => [
+        'basePath' => dirname(__DIR__) . '/src',
+    ]
+];
