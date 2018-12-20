@@ -5,10 +5,14 @@ namespace idk\app\helpers;
 use yii\helpers\Yii;
 use yii\exceptions\InvalidConfigException;
 use yii\helpers\Html;
-
+use yii\helpers\Url;
 
 class DocHelper
 {
+    private static $redirections = [
+        '2-Configuration' => ['site/config'],
+    ];
+
     public static function doc($file)
     {
         $path = Yii::getAlias("@doc/$file.md");
@@ -17,7 +21,6 @@ class DocHelper
         }
 
         return self::renderFile($path);
-
     }
 
     public static function readme()
@@ -28,7 +31,10 @@ class DocHelper
     private static function renderFile($path)
     {
         $parser = new \cebe\markdown\Markdown();
-
-        return Html::tag('div', $parser->parse(file_get_contents($path)), ['class' => 'md']);
+        $html = $parser->parse(file_get_contents($path));
+        $html = preg_replace_callback('!<a href="([^"]+).md"!', function($match) {
+             return isset(self::$redirections[$match[1]]) ? '<a href="' . Url::to(self::$redirections[$match[1]]) . '"' : $match[0];
+        }, $html);
+        return Html::tag('div', $html, ['class' => 'md']);
     }
 }
