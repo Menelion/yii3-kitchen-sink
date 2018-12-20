@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3f64d04cd9c12fae57ef4d3f62f2a4b8",
+    "content-hash": "3d4a50bc807c976fc325ce6b2228af99",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -614,12 +614,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/di.git",
-                "reference": "a9dff7f2dbd15c047da05959b40556668ffea833"
+                "reference": "37dcddb8935aeb88f12dadcbc86a01da7a80117d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/di/zipball/a9dff7f2dbd15c047da05959b40556668ffea833",
-                "reference": "a9dff7f2dbd15c047da05959b40556668ffea833",
+                "url": "https://api.github.com/repos/yiisoft/di/zipball/37dcddb8935aeb88f12dadcbc86a01da7a80117d",
+                "reference": "37dcddb8935aeb88f12dadcbc86a01da7a80117d",
                 "shasum": ""
             },
             "require": {
@@ -667,7 +667,7 @@
                 "injection",
                 "injector"
             ],
-            "time": "2018-11-30T17:20:44+00:00"
+            "time": "2018-12-20T08:57:19+00:00"
         },
         {
             "name": "yiisoft/log",
@@ -1122,6 +1122,106 @@
             "time": "2018-12-12T09:01:24+00:00"
         },
         {
+            "name": "yiisoft/yii-dataview",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yiisoft/yii-dataview.git",
+                "reference": "bc2388df945b94c03bc1b207f8b31ee1bf31a612"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yiisoft/yii-dataview/zipball/bc2388df945b94c03bc1b207f8b31ee1bf31a612",
+                "reference": "bc2388df945b94c03bc1b207f8b31ee1bf31a612",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/view": "^3.0@dev",
+                "yiisoft/yii-core": "^3.0@dev"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.2",
+                "hiqdev/composer-config-plugin": "^1.0@dev",
+                "phpunit/phpunit": "^7.3",
+                "yiisoft/cache": "^3.0@dev",
+                "yiisoft/di": "^3.0@dev",
+                "yiisoft/log": "^3.0@dev",
+                "yiisoft/yii-web": "^3.0@dev"
+            },
+            "suggest": {
+                "yiisoft/yii-core": "^3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "yii\\dataview\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Qiang Xue",
+                    "email": "qiang.xue@gmail.com",
+                    "homepage": "http://www.yiiframework.com/",
+                    "role": "Founder and project lead"
+                },
+                {
+                    "name": "Alexander Makarov",
+                    "email": "sam@rmcreative.ru",
+                    "homepage": "http://rmcreative.ru/",
+                    "role": "Core framework development"
+                },
+                {
+                    "name": "Maurizio Domba",
+                    "homepage": "http://mdomba.info/",
+                    "role": "Core framework development"
+                },
+                {
+                    "name": "Carsten Brandt",
+                    "email": "mail@cebe.cc",
+                    "homepage": "http://cebe.cc/",
+                    "role": "Core framework development"
+                },
+                {
+                    "name": "Timur Ruziev",
+                    "email": "resurtm@gmail.com",
+                    "homepage": "http://resurtm.com/",
+                    "role": "Core framework development"
+                },
+                {
+                    "name": "Paul Klimov",
+                    "email": "klimov.paul@gmail.com",
+                    "role": "Core framework development"
+                },
+                {
+                    "name": "Dmitry Naumenko",
+                    "email": "d.naumenko.a@gmail.com",
+                    "role": "Core framework development"
+                },
+                {
+                    "name": "Boudewijn Vahrmeijer",
+                    "email": "info@dynasource.eu",
+                    "homepage": "http://dynasource.eu",
+                    "role": "Core framework development"
+                }
+            ],
+            "description": "Yii Framework Data Displaying Extension",
+            "homepage": "http://www.yiiframework.com/",
+            "keywords": [
+                "view",
+                "yii"
+            ],
+            "time": "2018-11-17T20:54:54+00:00"
+        },
+        {
             "name": "yiisoft/yii-web",
             "version": "dev-master",
             "source": {
@@ -1324,6 +1424,7 @@
         "yiisoft/yii-web": 20,
         "symfony/var-dumper": 20,
         "vlucas/phpdotenv": 20,
+        "yiisoft/yii-dataview": 20,
         "hiqdev/composer-config-plugin": 20
     },
     "prefer-stable": false,

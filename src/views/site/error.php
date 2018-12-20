@@ -12,3 +12,5 @@ $this->subTitle = get_class($exception);
 <div class="exception">
     <?= nl2br(Html::encode($exception->getMessage())) ?>
 </div>
+
+<?php dump($exception) ?>

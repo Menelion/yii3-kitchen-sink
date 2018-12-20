@@ -1,3 +1,4 @@
+@menu-width: 200px;
 
 .pure-img-responsive {
     max-width: 100%;
@@ -26,12 +27,12 @@ This is the parent `<div>` that contains the menu and the content area.
     padding-left: 0;
 }
     #layout.active #menu {
-        left: 150px;
-        width: 150px;
+        left: @menu-width;
+        width: @menu-width;
     }
 
     #layout.active .menu-link {
-        left: 150px;
+        left: @menu-width;
     }
 /*
 The content `<div>` is where all your content goes.
@@ -75,8 +76,8 @@ appears on the left side of the page.
 */
 
 #menu {
-    margin-left: -150px; /* "#menu" width */
-    width: 150px;
+    margin-left: -@menu-width; /* "#menu" width */
+    width: @menu-width;
     position: fixed;
     top: 0;
     left: 0;
@@ -85,11 +86,7 @@ appears on the left side of the page.
     background: #191818;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
-}
-    /*
-    All anchors inside the menu should be styled like this.
-    */
-    #menu a {
+    a {
         color: #999;
         border: none;
         padding: 0.6em;
@@ -98,6 +95,8 @@ appears on the left side of the page.
             width: 50%;
         }
     }
+}
+   
 
     /*
     Remove all background/borders, since we are applying them to #menu.
@@ -212,21 +211,21 @@ Hides the menu at `48em`, but modify this based on your app's needs.
     }
 
     #layout {
-        padding-left: 150px; /* left col width "#menu" */
+        padding-left: @menu-width; /* left col width "#menu" */
         left: 0;
     }
     #menu {
-        left: 150px;
+        left: @menu-width;
     }
 
     .menu-link {
         position: fixed;
-        left: 150px;
+        left: @menu-width;
         display: none;
     }
 
     #layout.active .menu-link {
-        left: 150px;
+        left: @menu-width;
     }
 }
 
@@ -239,6 +238,6 @@ Hides the menu at `48em`, but modify this based on your app's needs.
     */
     #layout.active {
         position: relative;
-        left: 150px;
+        left: @menu-width;
     }
 }

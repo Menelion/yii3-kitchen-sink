@@ -4,6 +4,7 @@ namespace idk\app\helpers;
 
 use yii\helpers\Yii;
 use yii\exceptions\InvalidConfigException;
+use yii\helpers\Html;
 
 
 class DocHelper
@@ -17,6 +18,6 @@ class DocHelper
 
         $parser = new \cebe\markdown\Markdown();
 
-        return $parser->parse(file_get_contents($path));
+        return Html::tag('div', $parser->parse(file_get_contents($path)), ['class' => 'md']);
     }
 }

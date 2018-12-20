@@ -42,6 +42,7 @@ $this
                 'items' => [
                     ['label' => 'Home', 'url' => ['site/index']],
                     ['label' => 'Configuration', 'url' => ['site/config']],
+                    ['label' => 'yiisoft/yii-dataview', 'url' => ['data-view/index']]
                 ],
             ]); ?>
         </div>
