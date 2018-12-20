@@ -32,6 +32,15 @@ class SiteController extends Controller
         ]);
     }
 
+    public function actionPackages()
+    {
+        return $this->render('doc', [
+            'document' => '3-Packages',
+            'title' => 'New composer packages',
+            'subTitle' => 'How was Yii 2 was split into several packages',
+        ]);
+    }
+
     public function actionConfig()
     {
         $pluginOutputPath = Yii::getAlias('@vendor/hiqdev/composer-config-plugin-output');

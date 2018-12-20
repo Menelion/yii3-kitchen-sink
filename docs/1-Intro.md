@@ -14,7 +14,7 @@ Here are the main changes in Yii 3. You can check the complete [CHANGELOG](https
 
 ### **Source code splitting**
 
-The framework source code have been split into several packages, and at its core level, Yii no longer makes assumptions about your development stack, or the features you will be using.
+The framework source code have been [split into several packages](3-Packages.md), and at its core level, Yii no longer makes assumptions about your development stack, or the features you will be using.
 
 This enable you to cherry pick the packages you need to compose your application.
 

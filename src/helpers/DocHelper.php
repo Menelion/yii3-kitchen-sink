@@ -11,6 +11,7 @@ class DocHelper
 {
     private static $redirections = [
         '2-Configuration' => ['site/config'],
+        '3-Packages' => ['site/packages'],
     ];
 
     public static function doc($file)
