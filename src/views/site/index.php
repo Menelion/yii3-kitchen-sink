@@ -1,7 +1,7 @@
 <?php
+
+use idk\app\helpers\DocHelper;
 /* @var $foo string */
 ?>
 
-<p>
-    <?= $foo ?>
-</p>
+<?= DocHelper::doc('1-Intro') ?>
