@@ -32,7 +32,7 @@ INSTALLATION
 2. Enter the project folder: `cd yii3-kitchen-sink`
 3. Create a `.env` file: `cp .env.dist .env`
 4. Install dependencies: `composer install`
-5. Run the project: `./vendor/bin/yii serve --router=router.php`
+5. Run the project: `./vendor/bin/yii serve`
 
 You can now access it via `http://localhost:8080/`
 
