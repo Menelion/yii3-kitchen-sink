@@ -1,7 +1,7 @@
 # Yii 3 kitchen sink
 
 This is a Yii 3 project, created to test, document and showcase the new features
-of the framework.
+of the framework. You can see it running live on [https://yii3.idk.tn/](https://yii3.idk.tn/).
 
 > This originally started as a [Wiki post](https://www.yiiframework.com/wiki/2547/draft-understanding-yii-3)
 > but the post was getting too long, and documenting Yii 3 using Yii 3 was too
