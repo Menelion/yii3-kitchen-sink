@@ -15,3 +15,12 @@ composer plugin, which takes care of scanning and merging all the configurations
 
 You can read [Yii2 projects alternative organization](https://hiqdev.com/pages/articles/app-organization) 
 for an in-depth explanation of the motivation behind `hiqdev/composer-config-plugin`.
+
+---
+
+When developing with Yii 3, especially the first days, you may find yourself not getting the results expected
+only to later understand that you forgot to run `composer du`, and that your new configuration isn't taken 
+into account.
+
+This can be solved in your development environment by calling `\hiqdev\composer\config\Builder::rebuild();`
+from your index.php file.
