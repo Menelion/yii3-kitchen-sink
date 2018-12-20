@@ -23,6 +23,15 @@ class SiteController extends Controller
         ]);
     }
 
+    public function actionIntro()
+    {
+        return $this->render('doc', [
+            'document' => '1-Intro',
+            'title' => 'What is Yii 3?',
+            'subTitle' => 'Why was it made, and how',
+        ]);
+    }
+
     public function actionConfig()
     {
         $pluginOutputPath = Yii::getAlias('@vendor/hiqdev/composer-config-plugin-output');

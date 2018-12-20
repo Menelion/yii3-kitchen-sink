@@ -1,53 +1,55 @@
-<p align="center">
-    <a href="http://www.yiiframework.com/" target="_blank">
-        <img src="https://www.yiiframework.com/files/logo/yii.png" width="400" alt="Yii Framework" />
-    </a>
-    <h1 align="center">Yii 3 Kitchen Sink</h1>
-    <br>
-</p>
+# Yii 3 kitchen sink
 
-This is a Yii 3 project, created to test and show case the new features of
-the new framework version.
+This is a Yii 3 project, created to test, document and showcase the new features
+of the framework.
 
-This project was built from scratch using [yiisoft/yii-project-template](https://github.com/yiisoft/yii-project-template),
-but instead of later installing one of the three proposed starters, I decided to do things manually and progressively.
+> This originally started as a [Wiki post](https://www.yiiframework.com/wiki/2547/draft-understanding-yii-3)
+> but the post was getting too long, and documenting Yii 3 using Yii 3 was too
+> fun to not be done.
 
-You may want to check the [commits](https://github.com/machour/yii3-kitchen-sink/commits/master) of this repository to see how I got there.
+You may want to check the [commits](https://github.com/machour/yii3-kitchen-sink/commits/master) of this repository to see how I got there. 
+
+You can also checkout this repository first commit:
+
+    git checkout 818c6bcc23f08376f1ec35a013c03fb77801c89e
+
+and then progressively update to later commits:
+
+    git checkout <commit-hash>
 
 
 REQUIREMENTS
 ------------
 
-The minimum requirement by this project template that your Web server supports PHP 7.1.
+The minimum requirement by this project template is that your Web server supports PHP 7.1.
 
 INSTALLATION
 ------------
 
 ### Manually
 
-* Clone this project: `git clone git@github.com:machour/yii3-kitchen-sink.git`
-* Enter the project folder: `cd yii3-kitchen-sink`
-* Create a `.env` file: `cp .env.dist .env`
-* Install dependencies: `composer install`
-* Run the project: `./vendor/bin/yii serve`
+1. Clone this project: `git clone git@github.com:machour/yii3-kitchen-sink.git`
+2. Enter the project folder: `cd yii3-kitchen-sink`
+3. Create a `.env` file: `cp .env.dist .env`
+4. Install dependencies: `composer install`
+5. Run the project: `./vendor/bin/yii serve --router=router.php`
 
 You can now access it via `http://localhost:8080/`
 
 ### Using docker
 
-Clone the repository and create the environment configuration file
+Perform steps 1 to 3 of the manual installation, and then:
 
-    cp .env.dist .env
+4. Get a bash on the docker image: `docker-compose run --rm php bash``
+5. Install dependencies: `composer install`
+6. From your docker host, run: `docker-compose up -d`
 
-To run the installation create a bash from the PHP image
+You can now access the application via: `http://localhost:30080`
 
-    docker-compose run --rm php bash
-    
-and run the `composer` commands above.
-   
-Start application stack
+### Disclaimer
 
-    docker-compose up -d
-    
-Point your browser to: `http://docker.host:30080`
+I'm not affiliated with `@yiisoft`, and I'm still teaching myself Yii 3, so there might be
+some errors. 
 
+Don't hesitate to point them out be [opening a issue](https://github.com/machour/yii3-kitchen-sink/issues/new).
+You can also ask your questions there, I'll try my best to help out.

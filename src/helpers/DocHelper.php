@@ -16,6 +16,17 @@ class DocHelper
             throw new InvalidConfigException("Cannot find $file.md");
         }
 
+        return self::renderFile($path);
+
+    }
+
+    public static function readme()
+    {
+        return self::renderFile(Yii::getAlias("@doc/../README.md"));
+    }
+
+    private static function renderFile($path)
+    {
         $parser = new \cebe\markdown\Markdown();
 
         return Html::tag('div', $parser->parse(file_get_contents($path)), ['class' => 'md']);

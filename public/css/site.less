@@ -2,16 +2,25 @@
 @import "_layout.less";
 @import "_tabs.less";
 
+@primary-color: #ec3b3b;
+
 body {
     color: #777;
 }
 
 a {
-    color: #ec3b3b;
+    color: @primary-color;
     text-decoration: none;
     &:hover {
-        color: darken(#ec3b3b, 10%);
+        color: darken(@primary-color, 10%);
     }
+}
+
+blockquote {
+    border-left: 3px solid @primary-color;
+    margin: 0;
+    padding-left: 1em;
+    font-size: 12px;
 }
 
 .md {

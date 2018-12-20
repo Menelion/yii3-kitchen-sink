@@ -41,6 +41,7 @@ $this
                 ],
                 'items' => [
                     ['label' => 'Home', 'url' => ['site/index']],
+                    ['label' => 'Introduction', 'url' => ['site/intro']],
                     ['label' => 'Configuration', 'url' => ['site/config']],
                     ['label' => 'yiisoft/yii-dataview', 'url' => ['data-view/index']]
                 ],
@@ -60,9 +61,6 @@ $this
          
     </div>
 </div>
-
-
-
 
 <?php $this->endBody() ?>
 </body>

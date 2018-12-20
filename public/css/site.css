@@ -1836,6 +1836,12 @@ a {
 a:hover {
   color: #de1616;
 }
+blockquote {
+  border-left: 3px solid #ec3b3b;
+  margin: 0;
+  padding-left: 1em;
+  font-size: 12px;
+}
 .md code {
   background: rgba(27, 31, 35, 0.05);
   color: #080808;
